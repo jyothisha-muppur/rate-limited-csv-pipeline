@@ -1,4 +1,3 @@
-````markdown
 # Rate-Limited CSV Ingestion Pipeline
 
 A small CLI tool that reads a CSV of records and pushes them to an HTTP API as
@@ -45,7 +44,7 @@ enough to demo the auth flow without needing real credentials.
 
 You'll see output like:
 
-````
+```
 [*] Starting ingestion for 100 records against http://localhost:8080...
 [*] Processed 20/100 records...
 [*] Processed 40/100 records...
@@ -57,7 +56,7 @@ You'll see output like:
   },
   "time_taken": 4.982
 }
-````
+```
 
 ## CSV format
 
@@ -111,4 +110,3 @@ actual rate limit instead of the "burst, then idle" pattern.
 - The `.env` parser is intentionally minimal (no quoting edge cases, no
   multiline values, no variable interpolation). Fine for simple key/value
   config, not a replacement for `python-dotenv` if your needs get fancier.
-````
